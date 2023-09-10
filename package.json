@@ -6,6 +6,7 @@
     "dev": "bun run --watch index.tsx"
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "latest",
     "@kitajs/html": "latest",
     "bun-types": "latest"
   },

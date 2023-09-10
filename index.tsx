@@ -93,13 +93,9 @@ const BasePage = ({
 
 const app = new Elysia()
   .use(html())
-  .get("/", () => (
-    <BaseHtml>
-      <body class="flex w-full h-screen justify-center items-center">
-        <a href="/foo">foo</a>
-      </body>
-    </BaseHtml>
-  ))
+  .get("/", ({ set }) => {
+    set.redirect = "/foo";
+  })
   .get("/foo", () => (
     <BaseHtml>
       <BasePage
