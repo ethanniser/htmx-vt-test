@@ -1,0 +1,20 @@
+{
+  "name": "htmx-vt-test",
+  "module": "index.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --watch index.tsx"
+  },
+  "devDependencies": {
+    "@kitajs/html": "latest",
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@elysiajs/html": "latest",
+    "@elysiajs/static": "^0.6.0",
+    "elysia": "latest"
+  }
+}
